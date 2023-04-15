@@ -1,0 +1,20 @@
+// ***************rules*********************8
+// "off" means 0 (turns the rule off completely)
+// "warn" means 1 (turns the rule on but won't make the linter fail)
+// "error" means 2 (turns the rule on and will make the linter fail)
+
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+        "no-console": 2 // Remember, this means error!
+     }
+  }
