@@ -1,12 +1,12 @@
 # todo-BE-Nodejs
 Todo List application written in Node.js using typescript
 
-TODO LIST APIs:
+**TODO LIST APIs:**
 
-1.) /api/todolist (GET): 
-    @Params: none
-    @Body: none
-    @Response: 
+1.) **/api/todolist (GET):** <br>
+    @Params: none <br>
+    @Body: none <br>
+    @Response: <br>
           {
             "message": "success",
             "error": false,
@@ -23,13 +23,13 @@ TODO LIST APIs:
             ]
           }
 
-2.) /api/todolist (POST): 
-    @Params: none
-    @Body: {
-      "title": @string,
-      "description": @string
-    }
-    @Reponse: {
+2.) **/api/todolist (POST):** <br>
+    @Params: none <br>
+    @Body: { <br>
+      "title": @string, <br>
+      "description": @string <br>
+    } <br>
+    @Reponse: { 
           "message": "Data added successfully.",
           "error": false,
           "code": 201,
