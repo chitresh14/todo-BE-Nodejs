@@ -17,5 +17,5 @@ app.use(authrouter);
 // });
 
 app.listen(envConfig.port, ()=> {
-console.log(`[Server]: I am running at https://localhost:${envConfig.port}`);
+console.log(`[Server]: I am running at http://localhost:${envConfig.port}`);
 });
