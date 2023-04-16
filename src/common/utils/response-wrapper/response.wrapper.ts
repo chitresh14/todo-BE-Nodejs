@@ -8,12 +8,14 @@ export class ResponseWrapper {
     * @param   {object | array} result
     * @param   {number} code
     **/
-    success(message: string, result: object | Array<any>, code: number) {
+    success(message: string, data: object | Array<any>, code: number) {
         return {
-            message,
-            error: false,
-            code,
-            result
+            response : {
+                message,
+                error: false,
+                code,
+                data
+            }
         };
     }
 
@@ -24,9 +26,11 @@ export class ResponseWrapper {
     */
     error(message: string, code: number) {
         return {
-            message,
-            code: code,
-            error: true
+            response: {
+                message,
+                code,
+                error: true
+            }
         };
     };
 
@@ -36,10 +40,12 @@ export class ResponseWrapper {
      */
     validation(errors: object | Array<any>) {
         return {
-            message: "Validation errors",
-            error: true,
-            code: statusCode.DATA_NOT_VALID,
-            errors
+            response: {
+                message: "Validation errors",
+                error: true,
+                code: statusCode.DATA_NOT_VALID,
+                errors
+            }
         };
     };
 }
