@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "env-cmd --file ./env/.env.dev.properties npm run build && node build/index.js",
+    "start": "env-cmd --file ./env/.env.prod.properties npm run build && node build/index.js",
     "start:dev": "env-cmd --file ./env/.env.dev.properties npx nodemon",
     "build": "rimraf ./build && tsc",
     "lint": "eslint . --ext .ts"
