@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { TodoListController } from './todo-list.controller';
-import { ResponseWrapper } from '../../common/utils/response-wrapper/response.wrapper';
+import { ResponseWrapper } from '../../common/utils/response_wrapper/response.wrapper';
 
 export class TodoListRoutes {
     public router: Router;
