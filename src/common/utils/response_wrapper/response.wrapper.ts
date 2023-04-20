@@ -1,4 +1,4 @@
-import { statusCode } from '../../interfaces/response-wrapper.interface';
+import { statusCode } from '../../interfaces/response_wrapper.interface';
 
 export class ResponseWrapper {
     constructor(){}

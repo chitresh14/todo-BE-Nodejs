@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
-import { ITodoList } from '../../common/interfaces/todo-list.interface';
-import { ResponseWrapper } from '../../common/utils/response-wrapper/response.wrapper'
-import { statusCode } from '../../common/interfaces/response-wrapper.interface';
+import { ITodoList } from '../../common/interfaces/todo_list.interface';
+import { ResponseWrapper } from '../../common/utils/response_wrapper/response.wrapper'
+import { statusCode } from '../../common/interfaces/response_wrapper.interface';
 import { v4 as uuidv4 } from 'uuid';
 
 
