@@ -1,5 +1,5 @@
 import {Express, Request, Response, Router, NextFunction} from 'express';
-import allRoutes  from '../controllers';
+import  allRoutes from '../controllers'
 
 
 const authrouter = Router();

@@ -1,21 +1,19 @@
 import { statusCode } from '../../interfaces/response_wrapper.interface';
 
 export class ResponseWrapper {
-    constructor(){}
+    constructor() { }
     /**
     * @desc    Send any success response
     * @param   {string} message
-    * @param   {object | array} result
+    * @param   {object | array} data
     * @param   {number} code
     **/
     success(message: string, data: object | Array<any>, code: number) {
         return {
-            response : {
-                message,
-                error: false,
-                code,
-                data
-            }
+            message,
+            error: false,
+            code,
+            data
         };
     }
 
@@ -26,11 +24,9 @@ export class ResponseWrapper {
     */
     error(message: string, code: number) {
         return {
-            response: {
-                message,
-                code,
-                error: true
-            }
+            message,
+            code,
+            error: true
         };
     };
 
@@ -40,12 +36,10 @@ export class ResponseWrapper {
      */
     validation(errors: object | Array<any>) {
         return {
-            response: {
-                message: "Validation errors",
-                error: true,
-                code: statusCode.DATA_NOT_VALID,
-                errors
-            }
+            message: "Validation errors",
+            error: true,
+            code: statusCode.DATA_NOT_VALID,
+            errors
         };
     };
 }

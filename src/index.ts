@@ -10,7 +10,7 @@ const app: Express = express();
 new Application(app);
 
 app.get('/api/heath-check', (req: Request, res: Response)=>{
-    res.send('I am Working.');
+    res.send('Application server is running.');
 });
 
 app.listen(envConfig.port, ()=> {
