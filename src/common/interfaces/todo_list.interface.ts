@@ -1,5 +1,7 @@
 export interface ITodoList {
     title: string,
     description: string,
-    id: string
+    isCompleted: boolean,
+    createdAt?: Date,
+    updatedAt?: Date
 } 
